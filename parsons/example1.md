@@ -43,4 +43,4 @@ Construct a program that swaps the values of variables <code>x</code> and <code>
 </script>
 
 [Next](./example2.html)
-[Next](./ej1.html)
+[Next2](./ej1.html)
