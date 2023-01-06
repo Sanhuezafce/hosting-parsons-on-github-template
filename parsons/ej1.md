@@ -35,7 +35,8 @@ title: Page 3 Example (Variable Check Grader)
   }); 
   $("#ej1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
-      parsonsPuzzle.getFeedback(); 
+      console.log(parsonsPuzzle.getFeedback()); 
+      
   }); 
 })(); 
 </script>
