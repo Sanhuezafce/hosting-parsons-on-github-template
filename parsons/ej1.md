@@ -40,3 +40,5 @@ title: Page 3 Example (Variable Check Grader)
   }); 
 })(); 
 </script>
+
+[Previous](./example1.html)
