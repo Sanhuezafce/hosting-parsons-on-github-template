@@ -12,7 +12,8 @@ title: Example 2
 </p>
 
 <script type="text/javascript">
-var initial = "1\n" +
+(function(){
+    var initial = "1\n" +
     "2\n" +
     "3\n" +
     "4\n" +
@@ -35,7 +36,7 @@ $("#newInstanceLink").click(function(event){
 $("#feedbackLink").click(function(event){
     event.preventDefault();
     parsonsPuzzle2.getFeedback();
-});
+})();
 </script>
 
 [Previous](./example1.html)
