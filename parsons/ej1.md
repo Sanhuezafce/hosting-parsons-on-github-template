@@ -29,16 +29,16 @@ title: Page 3 Example (Variable Check Grader)
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#ej1-newInstanceLink").click(function(event){ 
-      event.preventDefault(); 
-      parsonsPuzzle.shuffleLines(); 
+  $("#ej1-newInstanceLink").click(function(event){
+      event.preventDefault();
+      parsonsPuzzle.shuffleLines();
   }); 
-  $("#ej1-feedbackLink").click(function(event){ 
-      event.preventDefault(); 
-      console.log(parsonsPuzzle.getFeedback()); 
-      
-  }); 
-})(); 
+  $("#ej1-feedbackLink").click(function(event){
+      event.preventDefault();
+      console.log(parsonsPuzzle.getFeedback());
+      document.write(parsonsPuzzle.getFeedback());
+  });
+})();
 </script>
 
-[Previous](./example1.html)
+[Next](./example1.html)
