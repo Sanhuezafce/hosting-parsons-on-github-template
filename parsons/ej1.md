@@ -12,6 +12,7 @@ title: Page 3 Example (Variable Check Grader)
 </p> 
 <script type="text/javascript"> 
 (function(){
+  var attempts = 0
   var initial = "def hola():\n" +
     "	return 123\n" +
     "def hola: #distractor\n" +
@@ -34,7 +35,9 @@ title: Page 3 Example (Variable Check Grader)
       parsonsPuzzle.shuffleLines();
   });
   $("#ej1-feedbackLink").click(function(event){
+      attempts++;
       event.preventDefault();
+      console.log("Attempts: " + attempts);
       console.log(parsonsPuzzle.getFeedback());
   });
 })();
