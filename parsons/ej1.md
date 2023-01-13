@@ -41,7 +41,3 @@ title: Page 3 Example (Variable Check Grader)
 </script>
 
 [Next](./example1.html)
-
-[Next](./example1.html)
-
-[Next](./example1.html)
