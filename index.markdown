@@ -48,4 +48,4 @@ Re organiza los bloques para que digan el clasico mensaje "Hello World!"
 
 
 ### Siguiente ejemplo
-[Next](./parsons/ej2.html)
+[Next](./ej2.html)
