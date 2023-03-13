@@ -24,7 +24,7 @@ A veces los problemas de Parsons pueden tener lineas que no corresponden al codi
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
-    "can_indent": true,
+    "can_indent": false,
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
