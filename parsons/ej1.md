@@ -1,47 +1,51 @@
 ---
-layout: default
-title: Ejemplo 1 Problemas de Parsons
----
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-<div id="ej1-sortableTrash" class="sortable-code"></div> 
-<div id="ej1-sortable" class="sortable-code"></div> 
-<div style="clear:both;"></div> 
-<p> 
-    <input id="ej1-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="ej1-newInstanceLink" value="Reset Problem" type="button" /> 
-</p> 
-<script type="text/javascript"> 
-(function(){
-  var attempts = 0
-  var initial = "def hola():\n" +
-    "	return 123\n" +
-    "def hola: #distractor\n" +
-    "	return hola #distractor";
+layout: default
+title: Conociendo los problemas de Parsons !
+---
+# Parsons Practice
+
+## Parsons 2
+A veces los problemas de Parsons pueden tener lineas que no corresponden al codigo final! (distractores)
+
+<div id="p1-sortableTrash" class="sortable-code"></div>
+<div id="p1-sortable" class="sortable-code"></div>
+<div style="clear:both;"></div>
+<p>
+    <input id="p1-feedbackLink" value="Get Feedback" type="button" />
+    <input id="p1-newInstanceLink" value="Reset Problem" type="button" />
+</p>
+<script type="text/javascript">
+(function() {
+  var initial = "print(\"Hello\")\n" +
+    "print(\" \")\n" +
+    "print(\"World\")\n" +
+    "print(\"!\")";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "ej1-sortable",
+    "sortableId": "p1-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
-    "can_indent": true,
+    "can_indent": false,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "ej1-sortableTrash"
+    "trashId": "p1-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#ej1-newInstanceLink").click(function(event){
+  $("#p1-newInstanceLink").click(function(event){
       event.preventDefault();
       parsonsPuzzle.shuffleLines();
   });
-  $("#ej1-feedbackLink").click(function(event){
-      attempts++;
+  $("#p1-feedbackLink").click(function(event){
       event.preventDefault();
-      console.log("Attempts: " + attempts);
-      console.log(parsonsPuzzle.getFeedback());
+      parsonsPuzzle.getFeedback();
   });
 })();
 </script>
 
-"Continuar al siguien ejemplo:"
-[Next](./example1.html)
+
+### Siguiente ejemplo
+[Next](./parsons/example1.html)
