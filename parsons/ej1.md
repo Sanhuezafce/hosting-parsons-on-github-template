@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Page 3 Example (Variable Check Grader)
+title: Ejemplo 1 Problemas de Parsons
 ---
 
 <div id="ej1-sortableTrash" class="sortable-code"></div> 
@@ -43,4 +43,5 @@ title: Page 3 Example (Variable Check Grader)
 })();
 </script>
 
+"Continuar al siguien ejemplo:"
 [Next](./example1.html)
