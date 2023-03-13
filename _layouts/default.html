@@ -6,7 +6,7 @@
 
     <link href="https://js-parsons.github.io/js/js-parsons/parsons.css" rel="stylesheet" />
     <link href="https://js-parsons.github.io/js/js-parsons/lib/prettify.css" rel="stylesheet" />
-    
+
     <script src="https://js-parsons.github.io/js/js-parsons/lib/jquery.min.js"></script>
     <script src="https://js-parsons.github.io/js/js-parsons/lib/jquery-ui.min.js"></script>
     <script src="https://js-parsons.github.io/js/jquery.ui.touch-punch.min.js"></script>
@@ -25,15 +25,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
-
     <main id="content" class="main-content" role="main">
       {{ content }}
 
