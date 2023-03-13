@@ -45,4 +45,4 @@ A veces los problemas de Parsons pueden tener lineas que no corresponden al codi
 
 
 ### Ultimo ejemplo !
-[Next](./parsons/ej3.html)
+[Next](./ej3.html)
