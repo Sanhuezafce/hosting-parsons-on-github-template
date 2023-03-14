@@ -43,6 +43,5 @@ title: Conociendo los problemas de Parsons ! - Distractores
 })(); 
 </script>
 
-
 ### Ultimo ejemplo !
 [Next](./ej3.html)
