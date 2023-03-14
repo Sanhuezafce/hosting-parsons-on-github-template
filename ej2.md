@@ -3,9 +3,7 @@ layout: default
 title: Conociendo los problemas de Parsons ! - Distractores
 ---
 ## Parsons 2
-A veces los problemas de Parsons pueden
-tener lineas que no corresponden al 
-codigo final! (distractores)
+
 
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
